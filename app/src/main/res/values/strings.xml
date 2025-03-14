@@ -1,3 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Pigeonv2</string>
+    <string name="app_name">Pigeon Game</string>
+    
+    <!-- Menu strings -->
+    <string name="start_game">Start Game</string>
+    <string name="language">Language</string>
+    <string name="difficulty">Difficulty</string>
+    
+    <!-- Settings strings -->
+    <string name="music_volume">Music Volume</string>
+    <string name="sound_volume">Sound Volume</string>
+    <string name="vibration">Vibration</string>
+    
+    <!-- Difficulty levels -->
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+    
+    <!-- New string -->
+    <string name="settings">Settings</string>
+    
+    <!-- Achievements -->
+    <string name="achievement_first_flight_title">Первый полет</string>
+    <string name="achievement_first_flight_desc">Начните свою первую игру</string>
+    
+    <string name="achievement_poop_master_title">Мастер какашек</string>
+    <string name="achievement_poop_master_desc">Попадите в 10 пешеходов</string>
+    
+    <string name="achievement_hotdog_lover_title">Любитель хот-догов</string>
+    <string name="achievement_hotdog_lover_desc">Соберите 50 хот-догов</string>
 </resources>

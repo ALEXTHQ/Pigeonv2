@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -10,19 +13,32 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Pigeonv2"
+        android:theme="@style/Theme.PigeonGame"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".splash.SplashActivity"
             android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.Pigeonv2">
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.PigeonGame.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".menu.MenuActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.PigeonGame.NoActionBar" />
+
+        <activity
+            android:name=".game.GameActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.PigeonGame.NoActionBar" />
+
+        <activity
+            android:name=".settings.SettingsActivity"
+            android:theme="@style/Theme.PigeonGame.NoActionBar" />
     </application>
 
 </manifest>
